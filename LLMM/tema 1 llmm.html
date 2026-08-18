@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es"
+<head>
+    <meta charset=""UTF-8>
+<title> 
+ASPECTOS BÁSICOS DE LOS LENGUAJES DE MARCAS
+</title>
+</head>
+<body>
+    <!-- ! En la zona superior: botón de Javascript y títulos principales -->
+    <h1>T. 1. ASPECTOS BÁSICOS DE LOS LENGUAJES DE MARCAS</h1>
+    <h1> De paso, practicamos con JavaScript</h1>
+    <!-- !Creamos un botón en HTML -->
+     <button onclick="saludar()">¡Hazclic aquí!</button>
+     <!-- ! Aquí empieza el JavaScript -->
+     <script>
+        function saludar() {
+            alert("¡Hola! Acabo de ejecutar mi primer código en JavaScript");
+        }
+        </script>
+        <hr> <!-- ! 1.Agrego una línea divisoriasi queremos separar bloques-->
+        <!-- ! 2.Zona de contenido: teoría sobre lenguaje de marcas -->
+    <h2> Definición y clasificación de los lenguajes de marcas</h2>
+    <!-- !primer párrafo de texto-->
+    <p>Los LLMM sirven para codificar un documento incorporando etiquetas o marcas con información adicional relativa a la estructura del texto.
+        Aunque en un mismo documento pueden combinarse distintos LLMM, éstos se pueden clasificar en tres tipos:</p>
+    <!-- !la lista va fuera de forma independiente-->
+        <ul>
+            <!--el "ul" es la caja contenedora de la lista que sigue a continuación -->
+        <li>Lenguajes de marcas de presentación: se centran en la apariencia.</li> 
+        <li>Lenguajes de marcas de estructura: se centran en la organización</li>
+        <li>Lenguajes de marcas de semántica o descriptivos.se centran en el significado</li>
+   <!-- ? "li" se usa para hacer una lista no ordenada -->
+    </ul>
+   <!-- ! Añado otro párrafo si quiero poner otra lista-->
+    <p> Algunos ejemplos de marcado utilizados son:</p>
+    <!-- ! La segunda lista-->
+    <ul>
+        <li>En documentación electrónica: RTF, TeX, Wikitexto, CocBook</li>
+        <li>En tecnologías de internet: HTML, XHTML, RSS.</li>
+        <li>En sistemas de gestión de contenido: XML, SGML.</li>
+    </ul>
+    <h3> Evolución de los lenguajes de marcas </h3>
+    <p>En los años 60, para introducir anotaciones dentro de documentos electrónicos surgieron los lenguajes informáticos para describir y estructurar la información (los lenguajes de marcas), y también otros lenguajes orientados a la representación, almacenaje y consulta de grandes cantidades de datos (lenguajes y sistemas de bases de datos).</p>
+    
+    <h3>El origen: GML y SGML </h3>
+    <!-- ! En HTML, el intervalo oficial es de h1 hasta h6 -->
+    <!-- ! 3.Zona de nueva práctica con nuevas etiquetas -->
+     <div style="background-color: #f0f0f0; border: 2px solid #007acc; padding: 15px; margin-top: 20px;">
+        <!-- ! la explicación de las órdenes anteriores son: "background-color"cambia el color del fondo de la caja; el código "#f0f0f0" es un color en formato hexadecimal que se corresponde a gris claro; "border" es para definir el borde alrededor de la caja "2px" es el grosor del borde "#007acccolor del borde, "solid" es el estilo de línea continúa/sólida (también existe "dashed"-punteada- o "dotted" -puntos-); "padding: 15px" es el relleno interior de dentro de la caja que le dice al navegador que deje 15 px de separación entre el borde azul y el contenido de la caja, sin el padding, las letras pegarían directamente contra el borde y se vería horrible; "margin-top:20px" es el margen exterior superior -->
+        <!-- ! el div sirve para agrupar varias etiquetas juntas dentro de una "caja", por sí misma esta etiqueta no hace nada pero sirve para decirle a CSS que le ponga un color de fondo, un borde, que lo centre, etc-->
+   <!-- ! En el ejemplo de abajo, esta caja agrupa una foto, un título, un texto y un enlace -->
+        <h3>Autora del documento: Marian</h3>
+    <!-- ! Incluyo una imagen de ejemplo -->
+     <!-- ! la imagen la pongo a 200 píxeles de ancho -->
+    <img src="img/puerto.jpg" alt="curso en el puerto" style="width: 200px;">
+    <br>
+    <!-- ! Con el atributo src="img/puerto.jpg" le digo al navegador que entre en la carpeta img y busque el archivo puerto.jpg. Con alt="descripción de la fot" estoy indicando que si la imagen falla al cargarse, el navegador muestra es texto. Añado un salto de línea para que los enlaces queden debajo de la foto-->
+<!-- ! Añadimos un enlace dentro del div con la etiqueta "a" --> 
+ <a href="https://github.com/mariamprmas-code" target="_blank">Ver más en GitHub</a><br>
+ <!-- ?Lo anterior es el enlace a una web externa que manda al usuario a otra página de internet; href="..." es la dirección web completa donde debe incluir el https://; target="_blank" hace que se abra en una pestaña nueva para que no cierren mi web -->
+ <!-- ! para que no se pongan los dos enlaces juntos en la pantalla coloco el salto de línea "br" al final de cada uno de los enlaces-->
+ <a href="https://developer.mozilla.org/es/docs/web/HTML" target="_blank">Documentación de MDN</a><br>
+<!-- ? En la etiqueta de arriba lo que he hecho es un enlace a otra página web externa donde href es la dirección web completa, target="_blank" es para que se abra en otra pestaña -->
+ <a href="mailto:mariamprmas@gmail.com">Enviar un correo a la autora</a><br>
+ <!-- ? En la etiqueta de arriba he hecho un enlace a mi cooreo para que cuando el usuario haga clic se le abra automáticamente con mi dirrección de e-mail, usar mailto evita tener que poner https:// -->   
+</div>
+ <!-- ! Aquí termina la caja (div) -->
+ <!-- TODO Para cambiar los colores de los comentarios: "!" ROJO; "?" -->
+  <h3>Pasos para hacer una lista ORDENADA</h3>
+  <ol>
+    <li>Escribo la etiqueta de apertura "ol"</li>
+    <li>Escribo la etiqueta de apertura "li" y el texto que quiero poner en la lista</li>
+    <li>Escribo la etiqueta de cierre "li"</li>
+    <li>Repito los pasos 2 y 3 tantas veces como elementos tenga la lista</li>
+    <li>Escribo la etiqueta de cierre "ol" </li> 
+</ol>
+</body>
+ </html>
