@@ -19,7 +19,7 @@
             alert("¡Hola! Acabo de ejecutar mi primer código en JavaScript");
         }
         <!-- ? Ahora pongo el código para conectar con el XML -->
-        fetch("LLMM/alumnos.xml")
+        fetch("alumnos.xml")
         .then(response => response.text())
         .then(data => {
             const parser = new DOMParser();
@@ -35,7 +35,7 @@
                     }
                     resultado += "</ul>";
                     <!-- Inyectamos el resultado en la pantalla-->
-                    document.getElementsById("datos-xml").innerHTML = resultado;
+                    document.getElementById("datos-xml").innerHTML = resultado;
         })
         .catch(error => console.error("Error al leer el XML:", error));
         </script>
