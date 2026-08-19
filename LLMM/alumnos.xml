@@ -19,6 +19,9 @@
    ?2. Sólo hay un elemento raiz: Todo el documento tiene que estar encerrado dentro de una etiqueta principal (en esta caso, <centro>...</centro>).
     ?3. Cierre: toda etiqueta que se abre, SE TIENE QUE CERRAR, además, distingue mayúsculas y minúsculas
     ?4. Anidamiento correcto: si abro <alumno> y luego <nombre>, debo cerrar primero <nombre> y después </alumno> -->
-
-
+<!-- ! XML vs. HTML (diferencia):
+ -HTML sirve para MOSTRAR datos; le dice al navegador "pon esta texto en grande, cambia el fondo a verde y añade un botón"
+ - XML sirve para GUARDAR Y ORGANIZAR DATOS; le dice al programa:"aquí hay un alumno, su nombre es Marian y su nota es 9.5".
+  Osea HTML se encarga del diseño visual que ve el usuario y XML se encarga de organizar los datos que procesan las máquinas -->
+<!-- Las etiquetas en HTML vienen predefinidas (hi, img....) y en XML me las invento, por ejemplo clase, usuario, producto... -->
            

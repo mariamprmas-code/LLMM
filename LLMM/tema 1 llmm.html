@@ -18,6 +18,26 @@
         function saludar() {
             alert("¡Hola! Acabo de ejecutar mi primer código en JavaScript");
         }
+        <!-- ? Ahora pongo el código para conectar con el XML -->
+        fetch("alumnos.xml")
+        .then(response => response.text())
+        .then(data => {
+            const parser = new DOMParser();
+            const xml = parser.parseFromString(data, "application/xml");
+            <!-- Buscamos las etiquetas <alumno> que tengo en mi xml-->
+                const alumnos = xml.getElementsByTagName("alumno");
+                let resultado = "<ul>";
+                    for (let i = 0; i < alumnos.length; i++) {
+                        let nombre = alumnos[i].getElementsByTagName("nombre")[0].textContent;
+                        let asignatura = alumnos[i].getElementsByTagName("asignatura")[0].textContent;
+                        let nota = alumnos[i].getElementsByTagName("nota")[0].textContent;
+                        resultado += "<li><strong>~{nombre}</strong>: ${asignatura} - Nota: ${nota}</li>";
+                    }
+                    resultado += "</ul>";
+                    <!-- Inyectamos el resultado en la pantalla-->
+                    document.getElementsById("datos-xml").innerHTML = resultado;
+        })
+        .catch(error => console.error("Error al leer el XML:", error));
         </script>
         <hr> <!-- ! 1.Agrego una línea divisoriasi queremos separar bloques-->
         <!-- ! 2.Zona de contenido: teoría sobre lenguaje de marcas -->
@@ -32,6 +52,9 @@
         </header>
         <hr> <!--Añado línea divisoria para separar bloques-->
         <!-- Le añado "id" a "h2" para que al hacer clic, por etiqueta "nav",en definicion del inicio del documento, me lleve a este lugar-->
+<!--Añado el div para ver la lista creada de alumnos en el dto de XML -->
+<h2>Lista de Alumnos desde XML:</h2>
+<div id=""datos-xml">Cargando datos del archivo XML...</div>    
     <h2 id="definicion">Definición y clasificación de los lenguajes de marcas</h2>
     <!-- !primer párrafo de texto-->
     <p>Los LLMM sirven para codificar un documento incorporando etiquetas o marcas con información adicional relativa a la estructura del texto.
