@@ -1,0 +1,12 @@
+[
+    {
+        "nombre": "Lucas",
+        "asignatura": "Entornos de Desarrollo",
+        "nota": 8.8
+    }
+    {
+        "nombre": "Sofía",
+        "asignatura": "Sistemas Informáticos",
+        "nota": 9.2
+    }
+]
