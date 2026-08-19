@@ -11,7 +11,17 @@
                 <nombre>Natalia</nombre>
                 <asignatura>Bases de Datos</asignatura>
                 <nota>10</nota>
+<!-- !No pongo id=.. porque JS ya lo lee-->
+            <alumno>
+                <nombre>Carlos</nombre>
+                <asignatura>Programación</asignatura>
+                <nota>8.5</nota></alumno>
             </alumno>
+            <alumno>
+                <nombre>Elena</nombre>
+                <asignatura>Sistemas Informáticos</asignatura>
+                <nota>9.0</nota>
+             </alumno>
         </curso>
     </centro>
     <!-- ? Las reglas son: 
