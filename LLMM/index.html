@@ -31,7 +31,7 @@
                         let nombre = alumnos[i].getElementsByTagName("nombre")[0].textContent;
                         let asignatura = alumnos[i].getElementsByTagName("asignatura")[0].textContent;
                         let nota = alumnos[i].getElementsByTagName("nota")[0].textContent;
-                        resultado += "<li><strong>~{nombre}</strong>: ${asignatura} - Nota: ${nota}</li>";
+                        resultado += `<li><strong>${nombre}</strong>: ${asignatura} - Nota: ${nota}</li>`;
                     }
                     resultado += "</ul>";
                     <!-- Inyectamos el resultado en la pantalla-->
