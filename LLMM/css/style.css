@@ -1,0 +1,46 @@
+/*Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color:#333;
+    margin: 20px;
+}
+/* Títulos con borde */
+h1 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498dd;
+    }
+    /* Menú de navegación en barra horizontal */
+    nav ul {
+        list-style: none;
+        padding: 0;
+        background-color: #333;
+        display: flex;
+    }
+    nav a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 14px 20px;
+    }
+    /* Efecto al pasar el ratón */
+    nav a:hover {
+        background-color: #3498db;
+    }
+    /*Lo anterior que he hecho es:
+    1. el color azul se debe a q en el archivo "style.css he puesto la regla "nav a hover { bakground" que le dice al navegador que cuando el ratón pase por encima de un enlace (a) dentro de la navegación (nav) cambie el fondo a ese color azul.
+    2. Lo del correo: tengo un enenlace en html que empiez por "href="mailto:...", siendo la forma estándar en html de abrir el gestor de correo del usuario para que me escriba.
+*/
+/*Estilo del pie de página */
+footer {
+    background-color: #2c3e50; /* Fondo azul oscuro */
+    Color: white; /* Texto en blanco */
+    text-align: center; /* Centra el texto */
+    padding: 15px; /*Espacio interno alrededor del texto */
+    margin-top: 40px; /* Separación con el contenido de arriba */
+    border-top: 3px solid #3498db; /* Línea azul superior decorativa */
+}
+footer p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}

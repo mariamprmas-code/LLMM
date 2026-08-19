@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="es"
 <head>
-    <meta charset=""UTF-8>
-<title> 
-ASPECTOS BÁSICOS DE LOS LENGUAJES DE MARCAS
-</title>
+    <meta charset="UTF-8">
+<title> ASPECTOS BÁSICOS DE LOS LENGUAJES DE MARCAS</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- ! En la zona superior: botón de Javascript y títulos principales -->
-    <h1>T. 1. ASPECTOS BÁSICOS DE LOS LENGUAJES DE MARCAS</h1>
+    <header>
+        <!-- Para organizar a nivel semántico envuelvo los títulos, el botón y el "nav" dentro de la etiqueta "header" y añado en h1 el "id"para la navegación del usuario por la web-->
+    <h1 id="inicio">T. 1. ASPECTOS BÁSICOS DE LOS LENGUAJES DE MARCAS</h1>
     <h1> De paso, practicamos con JavaScript</h1>
     <!-- !Creamos un botón en HTML -->
      <button onclick="saludar()">¡Hazclic aquí!</button>
@@ -20,7 +21,18 @@ ASPECTOS BÁSICOS DE LOS LENGUAJES DE MARCAS
         </script>
         <hr> <!-- ! 1.Agrego una línea divisoriasi queremos separar bloques-->
         <!-- ! 2.Zona de contenido: teoría sobre lenguaje de marcas -->
-    <h2> Definición y clasificación de los lenguajes de marcas</h2>
+    <!-- ? MENÚ DE NAVEGACIÓN NUEVO, que suele ir en la parte alta del documento para que el usuario pueda navegar nada más entrar a la página -->
+     <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#definicion">Definición</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        </nav>
+        </header>
+        <hr> <!--Añado línea divisoria para separar bloques-->
+        <!-- Le añado "id" a "h2" para que al hacer clic, por etiqueta "nav",en definicion del inicio del documento, me lleve a este lugar-->
+    <h2 id="definicion">Definición y clasificación de los lenguajes de marcas</h2>
     <!-- !primer párrafo de texto-->
     <p>Los LLMM sirven para codificar un documento incorporando etiquetas o marcas con información adicional relativa a la estructura del texto.
         Aunque en un mismo documento pueden combinarse distintos LLMM, éstos se pueden clasificar en tres tipos:</p>
@@ -40,6 +52,11 @@ ASPECTOS BÁSICOS DE LOS LENGUAJES DE MARCAS
         <li>En tecnologías de internet: HTML, XHTML, RSS.</li>
         <li>En sistemas de gestión de contenido: XML, SGML.</li>
     </ul>
+    <h2 id="contacto">Formulario de contacto</h2>
+<form action="https://www.google.com/search"method="GET">
+    <input type="text" name="q" placeholder="Buscar en Google...">
+    <button type="submit">Buscar</button> <!--El atributo "action" dentro de la etiqueta "form" sirve para indicar donde deben enviarse los datos cuando el usuario pulsa "enviar", en este caso, a dónde se envía pongo el buscador externo de google-->
+</form>
     <h3> Evolución de los lenguajes de marcas </h3>
     <p>En los años 60, para introducir anotaciones dentro de documentos electrónicos surgieron los lenguajes informáticos para describir y estructurar la información (los lenguajes de marcas), y también otros lenguajes orientados a la representación, almacenaje y consulta de grandes cantidades de datos (lenguajes y sistemas de bases de datos).</p>
     
@@ -133,8 +150,19 @@ ASPECTOS BÁSICOS DE LOS LENGUAJES DE MARCAS
     <label for="nombre">Nombre de usuario:</label>
         <input type="text" id="nombre" placeholder="Escribe aquí tu nombre">
     <!-- El input va después del label (la cajita donde el usuario escribe). La etiqueta label para saber qué escribir (un nombre, correo...), ya que un "input" por sí solo es una caja vacía. El input va después (la cajita donde el usuario escribe) -->
+<!--Puedo seguir añadiendo más imputs dentro -->
+<label for="correo">Correo:</label>
+<input type="email" id="correo">
+<button type="submit">Enviar</button>
+<!-- Cierro el formulario al FINAL de todos los campos -->
 </form>  
 <hr style="border: 2px solid orange;">
-<!-- Lo anterior es para que la línea sea más gruesa o cambiarle el color -->
-    </body>
+<!-- Lo anterior es para que la línea sea más gruesa o cambiarle el color -->  
+<!-- Pie de página de la web -->
+ <footer>
+    <p>&copy; 2026 Marian. Todos los derechos reservados.</p>
+    <!-- ? El código "&copy" en html genera el símbolo de copyright. En el documento css añado las reglas al final del dto -->
+    <p>Practicando Lenguaje de Marcas en VS Code.</p>
+ </footer>
+</body>
  </html>
