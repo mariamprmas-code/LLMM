@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Lista de alumnos matriculados en el curso -->
+ <centro>
+    <curso nombre="Desarrollo Web">
+        <alumno id="1">
+            <nombre>Marian</nombre>
+                <asignatura>Lenguaje de Marcas</asignatura>
+                <nota>9.5</nota>
+                </alumno>
+            <alumno id="2">
+                <nombre>Natalia</nombre>
+                <asignatura>Bases de Datos</asignatura>
+                <nota>10</nota>
+            </alumno>
+        </curso>
+    </centro>
+    <!-- ? Las reglas son: 
+   ? 1. La cabecera es obligatoria: la primera línea (<?xml version="1.0" encoding=UTF-8?>) indica la versión y que soporta tildes y caracteres en español
+   ?2. Sólo hay un elemento raiz: Todo el documento tiene que estar encerrado dentro de una etiqueta principal (en esta caso, <centro>...</centro>).
+    ?3. Cierre: toda etiqueta que se abre, SE TIENE QUE CERRAR, además, distingue mayúsculas y minúsculas
+    ?4. Anidamiento correcto: si abro <alumno> y luego <nombre>, debo cerrar primero <nombre> y después </alumno> -->
+
+
+           
