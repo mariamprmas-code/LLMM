@@ -44,3 +44,70 @@ footer p {
     margin: 5px 0;
     font-size: 0.9em;
 }
+/* Configuración general*/
+body {
+    font-family: ´Segoe UI´ Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+}
+/* Títulos principales */
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+/* Tarjetas para los alumnos*/
+li {
+    background-color: #ffffff;
+    list-style: none;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0.1);
+}
+/* Estilos para que la tabla se vea limpia y uniforme*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* Formato para las celdas */
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}/*Fondo gris suave para los encabezados */
+th {
+    background-color: #3498db;
+    color: white;
+}
+/* Efecto para resaltar la fila al pasar el ratón */
+tr:hover {
+    background-color: #f8f9fa;
+}
+/* Estilo del formulario */
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-Width: 400px;
+}
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+button:hover {
+    background-color: #2980b9;
+}

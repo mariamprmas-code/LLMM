@@ -38,7 +38,7 @@
         })
         .catch(error => console.error("Error al leer el XML:", error));
         // Cargar datos desde JSON
-        feth("alumnos.json")
+        fetch("alumnos.json")
         .then(response => response.json())
         .then(data => {
             let contenido = "<ul>";
@@ -65,9 +65,9 @@
         <!-- Le añado "id" a "h2" para que al hacer clic, por etiqueta "nav",en definicion del inicio del documento, me lleve a este lugar-->
 <!--Añado el div para ver la lista creada de alumnos en el dto de XML -->
 <h2>Lista de Alumnos desde XML:</h2>
-<div id="datos-xml">Cargando datos del archivo XML...</div> 
+<div id="datos-xml" class="tarjetas-alumnos">Cargando datos del archivo XML...</div>
 <h2>Lista de Alumnos desde JSON:</h2>
-<div id="datos-json">Cargando datos del archivo JSON...</div>   
+<div id="datos-json" class=""tarjetas-alumnos">Cargando datos del archivo JSON...</div>   
     <h2 id="definicion">Definición y clasificación de los lenguajes de marcas</h2>
     <!-- !primer párrafo de texto-->
     <p>Los LLMM sirven para codificar un documento incorporando etiquetas o marcas con información adicional relativa a la estructura del texto.
@@ -143,33 +143,25 @@
 </tr>
 </thead>
 <tbody>
-    <tr
-        <td><strong>Semana 1</strong><br>(18-24 Agosto)</td>
-        <td>Lenguajes de marcas &amp; Bases de datos</td>
+    <tr>
     <td>
-        <ul>
-                <li><strong>LLMM:</strong> Etiquetas HTML (tablas, listas, enlaces). </li>
-        <li><strong>BD:</strong> Modelo Entidad-Relación y diseño de bases de datos.</li>
-        </ul>
+            <strong>LLMM:</strong> Etiquetas HTML (tablas, listas, enlaces). <br>
+        <strong>BD:</strong> Modelo Entidad-Relación y diseño de bases de datos.<br>
     </td>
 </tr>
 <tr>
     <td><strong>Semana 2</strong><br>(25-31 Agosto)</td>
     <td>Entornos de Desarrollo &amp; Sistemas Informáticos</td>
     <td>
-    <ul>
-        <li><strong>ED:</strong>Control de versiones con Git y GitHub.</li>
-        <li><strong>SI:</strong> Sistemas operativos, comandos y gestión de archivos.</li>
-     </ul>        
+        <strong>ED:</strong>Control de versiones con Git y GitHub.<br>
+        <strong>SI:</strong> Sistemas operativos, comandos y gestión de archivos.<br>        
     </td>
 </tr>
 <tr>
     <td><strong>Semana 3</strong><br>(1-7 Sep)</td>
 <td>Desarrollo Web en Entorno Cliente</td>
 <td>
-    <ul>
-        <li><strong>DMEC:</strong> Fundamentos de JavaScript, variables y sintaxis básica.</li>
-    </ul>
+        <strong>DMEC:</strong> Fundamentos de JavaScript, variables y sintaxis básica.<br>
 </td>
 </tr>
 <tr style="background-color: #f0f0f0;">
@@ -177,6 +169,7 @@
     <td>Las 5 asignaturas</td>
     <td>Repaso de contenidos, ejercicios prácticos.</td>
 </tr>
+
 </tbody>
 </table>
 <hr>
@@ -194,11 +187,47 @@
 </form>  
 <hr style="border: 2px solid orange;">
 <!-- Lo anterior es para que la línea sea más gruesa o cambiarle el color -->  
+<h2>Formulario de Contacto</h2>
+<form id="miFormulario">
+<div>
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" placeholder="Escribe tu nombre" required>
+    </div>
+<br>
+<div>
+    <label for ="email">Correo electrónico:</label><br>
+    <input type="email" id="email" placeholder="tuemail@ejemplo.com" required>
+</div>
+<br>
+<div>
+    <label for="curso">Asignatura favorita:</label><br>
+    <select id="curso">
+        <option value="LLMM">Lenguajes de Marcas (LLMM)</option>
+        <option value="BD">Bases de Datos (BD)</option>
+        <option value="ED">Entornos de Desarrollo (ED)</option>
+    </select>
+</div>
+<br>
+<button type="submit">Enviar datos</button>
+</form>
 <!-- Pie de página de la web -->
  <footer>
     <p>&copy; 2026 Marian. Todos los derechos reservados.</p>
     <!-- ? El código "&copy" en html genera el símbolo de copyright. En el documento css añado las reglas al final del dto -->
     <p>Practicando Lenguaje de Marcas en VS Code.</p>
  </footer>
+ <script>
+  // Capturamos el evento de envío del formulario para javaScript
+        document.getElementById("miFormulario").addEventListener("submit", function(event) {
+            // Evitamos que la página se recargue por defecto
+            event.preventDefault();
+            // Leemos los valores introducidos por el usuario
+            const nombre = document.getElementById("nombre").value;
+            const email = document.getElementById("email").value;
+            const curso = document.getElementById("curso").value;
+            // Mostramos un mensaje con los datos capturados
+            alert("¡Gracias " + nombre + "! Hemos recibido tu elección: " + curso + ". Te contactaremos a " + email);
+        });
+ </script>
 </body>
  </html>
