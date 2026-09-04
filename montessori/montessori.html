@@ -63,14 +63,47 @@
             </tr>
             <tr>
                 <!-- <td> crea una celda con texto en negrita -->
-                    <td>Visita la<a href="https://montessori-ami.org" target="_blank">Asociación Montessori Internacional</a> para más información.</td>
+                    <td>Visita la <a href="https://montessori-ami.org" target="_blank">Asociación Montessori Internacional</a> para más información.</td>
                     </tr>
                      <!-- <a> crea el enlace, href="dirección" indica el destino y target="_blank" abre otra pestaña -->
                     </td>
             </tr>
+            <!-- Sección de contacto -->
+             <h2>Contacto</h2>
+             <p>Si necesitas más informacióm sobre nuestra filosofía, puedes escribirnos un correo a:</p>
+             <!-- El enlace de correo usa "mailto:" para abrir el gestor de correo del usuario -->
+              <p>
+                <a href="mailto:mariamprmas@gmail.com">Enviar correo a los creadores</a>
+               </p>
     </table>
-
-
+    <!-- Sección interactiva con JavaScript --> 
+     <h2>Consejo del día</h2>
+<p>Pulsa el botón que ejecuta JavaScript al hacer clic:</p>
+<!-- Un botón que ejecuta código JavaScript al hacer clic -->
+ <button onclick="alert('Ayúdame a hacerlo por mí mismo. - María Montessori')">
+    Ver la frase del día
+</button>
+<!-- Sección de curiosidad interactiva con JavaScript -->
+<h2>Curiosidad Montessori</h2>
+<!-- la etiqueta document.getElementById('texto-curiosidad'): es la orden que le dice al navegador "busca el elemento que tenga este Id exacto."La etiqueta .innerText='...', cambia por completo el texto que había dentro de ese párrafo por la frase que pongamos -->
+ <p id="texto-curiosidad">Haz clic en el botón para descubrir un principio clave de éste método.</p>
+  <button onclick="document.getElementById('texto-curiosidad').innerText = 'El ambiente preparado permite que el niño desarrolle su independencia de forma natural.'">
+Descubrir principio
+</button>
+<p id="frase-destacada">María Montessori creía que el error es parte del aprendizaje.</p>
+<!-- Botón que cambia el color del texto a un tono cálido -->
+ <button onclick="document.getElementById('frase-destacada').style.color = '#d97706'">
+    Destacar frase
+</button>
+<h3 id="seccion-filosofia">El respeto por el ritmo del niño</h3>
+<button onclick="destacarTexto()">Modificar sección</button>
+<!-- Bloque donde guardamos las etiquetas para JavaScript -->
+ <script>
+    function destacarTexto() {
+        document.getElementById('seccion-filosofia').style.color = '#d97706';
+        document.getElementById('seccion-filosofia').style.fontWeight = 'bold';
+    }
+ </script>
 </body>
 
 
