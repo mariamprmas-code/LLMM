@@ -1,0 +1,31 @@
+/* 1. Estilo general y tipografía */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e377c8; 
+    color: #2c2c2c;
+    max-width: 800px;    /*Ancho máximo centrado */
+    margin: 40px auto;
+    padding: 20px;
+    line-height: 1.6;    /* Espaciado agradable entre líneas */
+} 
+h3 {
+    border-bottom: 2px solid #d97706;    /* Línea decorativa sutil */
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+/* Diseño profesional para los botones */
+button {
+background-color: #d97706; 
+color: white;
+boder: none;              /* Sin bordes por defecto */
+padding: 10px 18px;      /* Espaciado interno cómodo */  
+font-size: 15px;
+border-radius: 6px;      /* Esquinas redondeadas */
+cursor: pointer;         /* Manita al pasar el ratón */
+transition: background-color 0.3s ease;     /* Transiciónsuave */
+margin: 8px 0;
+}
+/* Efecto al pasar el cursor por encima del botón */
+button:hover {
+    background-color: #b45309;
+}
