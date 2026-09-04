@@ -29,3 +29,19 @@ margin: 8px 0;
 button:hover {
     background-color: #b45309;
 }
+/* 4. Tarjeta o contenedor destacado para la filosofía */
+.seccion-filosofia {
+    background-color: #ffffff;                  /* fondo blanco para resaltar */
+    border-left: 5px solid #d97706;             /* Barra lateral en color ámbar */
+    padding: 20px;
+    margin: 25px 0;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0.25);    /* Sombra muy suave */
+}
+/* 5. Estilo profesional para las imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;     /* Esquinas ligeramente redondeadas */
+    margin: 15px 0;
+}
